@@ -1,0 +1,30 @@
+[project]
+name = "safetycage-tutorials"
+version = "0.1.0"
+description = "This project hosts the examples, tutorials, and notebooks to show how to use the safetycage package."
+readme = "README.md"
+requires-python = "==3.11.7"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "ipython<9", # avoids UnicodeDecodeError when loading autoreload (may be Windows only bug)
+    # ^ optionally, remove atuoreload in the examples since we shouldn't need them since no longer developing
+    "joblib==1.3.2",
+    "keras==2.15.0",
+    "matplotlib==3.8.2",
+    "numpy==1.25.2",
+    "pyrootutils==1.0.4",
+    "safetycage-testing>=0.1.5",
+    "scikit-learn==1.1.3",
+    # Note: tensorflow 2.15.0 has issues being added with uv, so include all below packages
+    # to avoid error (https://github.com/astral-sh/uv/issues/9420)
+    "tensorflow-io-gcs-filesystem==0.31.0",
+    "tensorflow==2.15.0",
+    "tensorflow-estimator==2.15.0",
+    "tensorflow-intel==2.15.0",
+]
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple" # can remove this once safetycage is on pypi
+
+[[tool.uv.index]]
+url = "https://test.pypi.org/simple"
