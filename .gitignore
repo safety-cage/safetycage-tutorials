@@ -14,14 +14,14 @@ wheels/
 **/outputs/
 **/logs/
 
-# model folder
-examples/use_case/model/
-
 # mnist example
 /mnist/metadata
 
 # cifar10 example
 /cifar10/metadata
+
+# iris example
+/iris/metadata
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,windows,linux,visualstudiocode,pycharm,python,jupyternotebooks,images,data,venv,virtualenv
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,linux,visualstudiocode,pycharm,python,jupyternotebooks,images,data,venv,virtualenv
