@@ -10,7 +10,7 @@ from pathlib import Path
 import pyrootutils
 
 root = pyrootutils.setup_root(search_from=Path(__file__), indicator=[".project-root"], pythonpath=True)
-from safetycage_testing.ABC.datamodule import DataModule
+from safetycage.ABC.datamodule import DataModule
 
 class MNISTDataModule(DataModule):
     """Module for MNIST data from Keras"""
