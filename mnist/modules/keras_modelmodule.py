@@ -9,7 +9,7 @@ import pyrootutils
 
 root = pyrootutils.setup_root(search_from=Path(__file__), indicator=[".project-root"], pythonpath=True)
 
-from safetycage.ABC.modelmodule import ModelModule
+from safetycage.modelmodule import ModelModule
 
 class KerasModelModule(ModelModule):
     def __init__(

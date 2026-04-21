@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 root = pyrootutils.setup_root(search_from=Path(__file__), indicator=[".project-root"], pythonpath=True)
-from safetycage.ABC.datamodule import DataModule
+from safetycage.datamodule import DataModule
 
 
 class IrisDataModule(DataModule):

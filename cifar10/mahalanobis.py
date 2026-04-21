@@ -10,7 +10,7 @@ pyrootutils.setup_root(__file__, indicator=".project-root", pythonpath=True)
 
 from safetycage.utils.functions_library import CauchyCombinationTest
 
-from safetycage.ABC.safetycage import SafetyCage
+from safetycage import SafetyCage
 
 class Mahalanobis(SafetyCage):
     """

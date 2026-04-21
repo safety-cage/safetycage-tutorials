@@ -10,7 +10,7 @@ from pathlib import Path
 import pyrootutils
 
 root = pyrootutils.setup_root(search_from=Path(__file__), indicator=[".project-root"], pythonpath=True)
-from safetycage.ABC.datamodule import DataModule
+from safetycage.datamodule import DataModule
 
 class CIFAR10DataModule(DataModule):
     """Module for CIFAR10 data from Keras"""

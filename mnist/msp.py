@@ -5,7 +5,7 @@ import os
 import pyrootutils
 pyrootutils.setup_root(__file__, indicator=".project-root", pythonpath=True)
 
-from safetycage.ABC.safetycage import SafetyCage
+from safetycage import SafetyCage
 
 class MSP(SafetyCage):
     """
