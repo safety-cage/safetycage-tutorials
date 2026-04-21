@@ -5,7 +5,7 @@ from pathlib import Path
 import pyrootutils
 
 root = pyrootutils.setup_root(search_from=Path(__file__), indicator=[".project-root"], pythonpath=True)
-from safetycage_testing.ABC.modelmodule import ModelModule
+from safetycage.ABC.modelmodule import ModelModule
 
 
 class SklearnIrisModelModule(ModelModule):

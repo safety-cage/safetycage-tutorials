@@ -18,7 +18,7 @@ class Trainer:
     def fit(self, epochs=100):
         # Compile model
         # Use categorical_crossentropy since we're using one-hot encoded labels
-        self.model.compile(optimizer='adam', loss="categorical_crossentropy", metrics=['accuracy'])
+        self.model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=1e-4), loss="categorical_crossentropy", metrics=['accuracy'])
         
         # Train model
         history = self.model.fit(
