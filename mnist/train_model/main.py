@@ -30,7 +30,7 @@ def main():
     trainer = Trainer(data_module, model)
     
     # Train model
-    trainer.fit(epochs=10)
+    trainer.fit(epochs=100)
     
     # Test model
     trainer.test()
